@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Project 133 - Panda</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <style>
+            body{
+                background:linear-gradient(green,pink,purple);
+                background-position:center;
+                background-size:cover;
+            }
+            a{
+                color:cornflowerblue;
+                background-color:cornsilk;
+                width:400px;
+                font-size:large;
+                border-radius:30%;
+            }
+            .heading{
+font-size: 23px;
+width: 100%;
+margin: 0px;
+}
+
+#status
+{
+font-size: 18px;
+}
+
+canvas
+{
+box-shadow: 10px 10px 10px grey;
+border-radius: 10px;
+margin-top: 60px;
+}
+a
+{
+  float:right;
+  margin: 5px;
+  cursor: pointer;
+}
+a:hover
+{
+  color:red !important;
+}
+        </style>
+    </head>
+<body>
+    <center>
+        <h1 class="btn btn-success heading">Object Detection</h1>
+        <a href="index.html" class="btn">Home</a>
+        <br><br>
+        <h3 id="status" class="btn btn-primary"></h3>
+        <br>
+        <h3 class="btn btn-info">This is an image of a panda, and cocossd has not guessed it correctly</h3>
+    </center>
+   <script src = "panda.js"></script>
+</body>
+</html>
